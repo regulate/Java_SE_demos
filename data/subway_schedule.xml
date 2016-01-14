@@ -1,0 +1,67 @@
+<trains>
+  <train number="1" start-time="2000">
+    <passengers class="concurrent-hash-map">
+      <entry>
+        <string>A</string>
+        <int>0</int>
+      </entry>
+      <entry>
+        <string>B</string>
+        <int>0</int>
+      </entry>
+      <entry>
+        <string>C</string>
+        <int>0</int>
+      </entry>
+      <entry>
+        <string>D</string>
+        <int>0</int>
+      </entry>
+    </passengers>
+    <line name="ABCD">
+      <arc time="4000">
+        <start-station name="A" per-hour-depart="100">
+          <passengers class="concurrent-hash-map"/>
+        </start-station>
+        <end-station name="B" per-hour-depart="80">
+          <passengers class="concurrent-hash-map"/>
+        </end-station>
+      </arc>
+      <arc time="5000">
+        <start-station reference="../../arc/end-station"/>
+        <end-station name="C" per-hour-depart="50">
+          <passengers class="concurrent-hash-map"/>
+        </end-station>
+      </arc>
+      <arc time="6000">
+        <start-station reference="../../arc[2]/end-station"/>
+        <end-station name="D" per-hour-depart="90">
+          <passengers class="concurrent-hash-map"/>
+        </end-station>
+      </arc>
+    </line>
+    <currentStation reference="../line/arc/start-station"/>
+  </train>
+  <train number="2" start-time="5000">
+    <passengers class="concurrent-hash-map">
+      <entry>
+        <string>A</string>
+        <int>0</int>
+      </entry>
+      <entry>
+        <string>B</string>
+        <int>0</int>
+      </entry>
+      <entry>
+        <string>C</string>
+        <int>0</int>
+      </entry>
+      <entry>
+        <string>D</string>
+        <int>0</int>
+      </entry>
+    </passengers>
+    <line reference="../../train/line"/>
+    <currentStation reference="../../train/line/arc/start-station"/>
+  </train>
+</trains>

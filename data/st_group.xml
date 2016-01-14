@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<students-group>
+    <student name="Ilya Potapchuk" age="22" />
+    <student name="Andrew Philips" age="21" />
+    <student name="Tom Huttson" age="21" />
+    <student name="Alex Wilson" age="24" />
+    <student name="Anthony Wilkins" age="23" />
+</students-group>

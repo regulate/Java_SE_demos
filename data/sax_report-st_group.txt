@@ -1,0 +1,29 @@
+Entering: students-group
+
+Entering: student
+Attributes: Name: name, value: Ilya Potapchuk
+Name: age, value: 22
+Leaving: student
+
+Entering: student
+Attributes: Name: name, value: Andrew Philips
+Name: age, value: 21
+Leaving: student
+
+Entering: student
+Attributes: Name: name, value: Tom Huttson
+Name: age, value: 21
+Leaving: student
+
+Entering: student
+Attributes: Name: name, value: Alex Wilson
+Name: age, value: 24
+Leaving: student
+
+Entering: student
+Attributes: Name: name, value: Anthony Wilkins
+Name: age, value: 23
+Leaving: student
+
+Leaving: students-group
+
